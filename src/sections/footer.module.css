@@ -1,0 +1,41 @@
+.parallaxLayer {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+	background: #0f2223;
+	z-index: -10;
+}
+
+.footer {
+	position: relative;
+	width: 640px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 32px;
+}
+
+.copy, .link {
+	color: #a79494;
+	margin: 8px;
+}
+
+.header {
+	font-size: 1em;
+	margin: 0;
+	color: #eee7e7;
+}
+
+@media screen and (max-width: 860px) {
+	.footer {
+		flex-direction: column;
+		width: 300px;
+	}
+
+	.copy {
+		order: 5;
+	}
+}

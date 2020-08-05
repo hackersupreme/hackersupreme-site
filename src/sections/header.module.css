@@ -1,0 +1,84 @@
+.parallaxLayer, .parallaxLayerBG {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.parallaxLayerBG {
+	background: white;
+}
+
+.background {
+	position: relative;
+	width: 640px;
+	height: 20px;
+	background: #eee7e7;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 50%;
+}
+
+.authorContainer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	border-bottom: 1px solid #eee7e7;
+}
+
+.author {
+	margin: 8px;
+	font-size: 0.75em;
+}
+
+.title {
+	font-size: 3.5em;
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0;
+	color: #0f2223;
+	text-align: center;
+}
+
+.button {
+	background: #0f2223;
+	border: none;
+	padding: 6px 16px;
+	border-radius: 4px;
+	color: #eee7e7;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	margin: 8px 0px 16px 0px;
+	cursor: pointer;
+}
+
+.button:hover, .button:focus {
+	background: #245558;
+	color: white;
+}
+
+
+@media screen and (max-width: 860px) {
+	.title {
+		font-size: 2.5em;
+	}
+
+	.background {
+		width: 300px;
+		height: 40px;
+	}
+
+}
